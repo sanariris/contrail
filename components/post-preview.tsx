@@ -32,10 +32,12 @@ const PostPreview = ({
             <a className="hover:underline">{title}</a>
           </Link>
         </h3>
-        <div className="flex flex-row"></div>
-        <Avatar name="{author.name}" picture={author.picture} />
-        <div className="font-bold text-xs my-auto mx-2"></div>
-        <DateFormatter dateString={date} />
+        <div className="flex flex-row">
+          <Avatar name="{author.name}" picture={author.picture} />
+          <div className="font-bold text-xs my-auto mx-2">
+            <DateFormatter dateString={date} />
+          </div>
+          </div>
       </div>
     </div>
   )
